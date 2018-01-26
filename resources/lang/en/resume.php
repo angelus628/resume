@@ -13,10 +13,10 @@
 <p>Next, I helped in the development of a testing tool that helped the marketing team to schedule the tests the they should perform in different times at night, this gave them the posibility to make test even when they were no present, meanwhile they just had to review the email sent by the application. The application was written in Flask, the microframework for Python.</p>
 <p>Lately, an team and I traveled over to Spain in order to receive training about a PHP framework developed by the team over there. This in order to give support to Colombian services and written in that framwrok, like that we should be able to take some workload from the spaniard team.</p>',
 
-        'position-extrema' => 'Web Developer',
-        'date-extrema'     => 'May 2013 - Nov 2013',
+        'position-extrema' => 'Web Developer (Freelance)',
+        'date-extrema'     => 'May 2013 - November 2013',
         'extrema'          => 'Extrema Relational Marketing',
-        'desc-extrema'     => '<p>I worked in Extrema to do three specific tasks, first they needed me to install and configure a wordpress site they were trying to sell another company. So I had to learn how to take wordpress dowloaded ZIP and upload it to the provided web hosting site. Y had to learn somethings about themes, plugins, taxonomy, and another little about the layer under it which is just PHP.</p>
+        'desc-extrema'     => '<p>I worked in Extrema to do three specific tasks, first they needed me to install and configure a wordpress site they were trying to sell another company. So I had to learn how to take wordpress dowloaded ZIP and upload it to the provided web hosting site. I had to learn somethings about themes, plugins, taxonomy, and another little about the layer under it which is just PHP.</p>
 <p>Also I was required to integrate a web page that was ment to keep record of the points one seller had earned during the sells cycle, and present it to the the seller, so that he or she was able to redeem these point by some products that their employer would gave them, in order to encorage the sales. The integration should by made to Joomla, so I had to learn the basics of sign in and logout of it. The idea was that they should be able to login indistinctly in one page or another (ours or joomla), and be able to access their information without login twice in two different pages.</p>
 <p>Lastly, I was required to develop a financial management system, to be used inside the company. As there was a short budget for this project, I was only asked to develop a invoice creator and that based on that the person should be able to print it or send it.</p>',
 
