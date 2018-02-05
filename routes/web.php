@@ -12,6 +12,14 @@
 |
 */
 
-Route::any('/{locale?}', 'PagesController@home')->where('locale', '[a-z]{2}');
+#Route::any('/{locale?}', 'PagesController@home')->where('locale', '[a-z]{2}');
+Route::prefix('{locale?}')->middleware('locale')->group(function(){
+    Route::get('/', 'PagesController@home')->name('home');
+    Route::get('/dashboard', 'Admin\HomeController@index');
+    Auth::routes();
+});
 
 
+
+
+#Route::get('/home', 'HomeController@index')->name('home');

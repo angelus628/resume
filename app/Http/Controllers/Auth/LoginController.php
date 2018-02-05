@@ -26,6 +26,7 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    protected $redirectAfterLogout = '/';
 
     /**
      * Create a new controller instance.
@@ -34,6 +35,9 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        $locale = app()->getLocale();
+        $this->redirectAfterLogout = '/' . $locale;
+        $this->redirectTo = '/' . $locale . '/dashboard';
         $this->middleware('guest')->except('logout');
     }
 }

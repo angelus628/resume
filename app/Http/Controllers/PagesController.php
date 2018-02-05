@@ -10,8 +10,8 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function home(Request $request, $locale = 'en'){
-        App::setLocale($locale);
+    #public function home(Request $request, $locale = 'en'){
+    public function home(Request $request){
         return view('pages.home');
     }
 }

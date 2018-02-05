@@ -1,13 +1,13 @@
-<!-- header 
+<!-- header
 ================================================== -->
-<header>   	
+<header>
     <div class="row">
         <div class="top-bar">
             <a class="menu-toggle" href="#"><span>Menu</span></a>
 
             <div class="logo">
-                <a href="index.html">@lang('menu.menu')</a>
-            </div>		      
+                <a href="{{ URL::current() }}">@lang('menu.menu')</a>
+            </div>
 
             <nav id="main-nav-wrap">
                 <ul class="main-navigation">
@@ -15,10 +15,10 @@
                     <li><a class="smoothscroll"  href="#about" title="">@lang('menu.about')</a></li>
                     <li><a class="smoothscroll"  href="#resume" title="">@lang('menu.resume')</a></li>
                     <!-- <li><a class="smoothscroll"  href="#portfolio" title="">@lang('menu.portfolio')</a></li> -->
-                    <li><a class="smoothscroll"  href="#services" title="">@lang('menu.services')</a></li>					
-                    <li><a class="smoothscroll"  href="#contact" title="">@lang('menu.contact')</a></li>	
+                    <li><a class="smoothscroll"  href="#services" title="">@lang('menu.services')</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="">@lang('menu.contact')</a></li>
                 </ul>
-            </nav>    		
-        </div> <!-- /top-bar --> 
+            </nav>
+        </div> <!-- /top-bar -->
     </div> <!-- /row -->
 </header> <!-- /header -->
