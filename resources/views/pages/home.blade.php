@@ -17,7 +17,7 @@
     @endcomponent
 
     @component('components.contact-form')
-    @endcomponent    
+    @endcomponent
 
     @component('components.footer')
     @endcomponent

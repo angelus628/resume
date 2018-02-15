@@ -15,7 +15,7 @@ class Locale
      */
     public function handle($request, Closure $next)
     {
-        if($request->method() == 'GET'){
+        if($request->method() == 'GET' || $request->method() == 'POST'){
             $locale = $request->segment(1);
             app()->setLocale($locale);
         }

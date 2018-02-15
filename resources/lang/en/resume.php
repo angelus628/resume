@@ -22,31 +22,31 @@
 
         'position-open' => 'Junior Web Developer',
         'date-open'     => 'September 2012 - May 2013',
-        'open'          => 'Open Sky Consultants',
-        'desc-open'     => '<p>When I worked at opensky, I entered as a practitioner. I started doing some Moodle installation and configuration. It was almost like Wordpress, Drupal or Joomla, you need a database, a place to install the files, and you\'re done, after that, everything is configuration.</p>
+        'open'          => 'Opensky Consultants',
+        'desc-open'     => '<p>When I worked at opensky, I entered as a practitioner. I started doing some Moodle (Learning platform) installation and configuration. It was almost like Wordpress, Drupal or Joomla, you need a database, a place to install the files, and you\'re done, after that, everything is configuration.</p>
 <p>Later I was asked to create a template from the ground to a known content management system called Drupal, I made some two with different layout and that was the starting point for the web page of the company. That\'s how I learned a bit about creating templates for Drupal.</p>
 <p>After that the company earned a contract in which we should provide the ways to automate the digitalization process of old documents, these documents were in very high in resolution, and needed to be first stored in a hierarchical way and in an specific place, to later be transformed into a PDF, trying to read the text inside it. The whole process was meant to be automatic, and that a user were able to insert metada into each document. The project was written in PHP aided by the CakePHP framework, that was my first time working with a software framework, and it was the introduction to this amazing world.</p>',
 
         'position-ads' => 'Web Developer',
-        'date-ads'     => 'Nov 2011 - Jun 2012',
+        'date-ads'     => 'November 2011 - Jun 2012',
         'ads'          => 'Adsmovil',
         'desc-ads'     => '<p>As my first job that was actually aligned with my career, it was the starting point to me to take the decision on becoming a developer. In Adsmovil, I started to write some web pages with HTML, CSS, some Javascript and PHP.</p>
 <p>By then, it was taken some strenght the tern Responsive Design, which was exactly what I needed back then in order to write web pages that were adaptable for any kind of mobile device.</p>
 <p>There I learned about CSS, some media queries, and was my actual first experience with working in an digital agency. </p>',
 
         'found-title' => 'Linux Foundation Certified System Administrator (LFCS)',
-        'found-date'  => 'Oct 2017 – Oct 2019',
+        'found-date'  => 'October 2016 – October 2017',
         'found-name'  => 'The Linux Foundation',
         'found-desc'  => 'I obtained the Linux  Foundation Certified System Administrator (LFCS) title, in an attempt to achieve a long time pursue dream, which was to learn more about the Linux Operating System, and have the support of an accrediting entity.',
 
 
         'ean-title' => 'System Engineer',
-        'ean-date'  => 'Jan 2011 - Nov 2013',
+        'ean-date'  => 'January 2011 - November 2013',
         'ean-name'  => 'EAN University',
         'ean-desc'  => 'At EAN university, I arrived after having taken the decision of becoming professional, although my family was in tough position, my father managed to help and pay the fisrt semester, it was a great effort, but at the end I managed to help myself through monitoring and become a representative of the faculty of engineering. There I learned, the basics of the JAVA programing language, some project administration, and as the university is very focused on entrepeneurship, I learned about the tools to create to create a startup.',
 
         'jose-title' => 'Technician System Engineer ',
-        'jose-date'  => 'Feb 2007 - Sep 2010',
+        'jose-date'  => 'February 2007 - September 2010',
         'jose-name'  => 'Fundation of Superiror Education San José',
         'jose-desc'  => 'As my first approach to System Engineering, it was where I acquired the basic knowledge of maths, equations, math logic, boolean logic, algorithms and where I started to write my first programs. There I found passion for writing code.',
     ];

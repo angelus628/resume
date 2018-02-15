@@ -17,6 +17,9 @@
                     <!-- <li><a class="smoothscroll"  href="#portfolio" title="">@lang('menu.portfolio')</a></li> -->
                     <li><a class="smoothscroll"  href="#services" title="">@lang('menu.services')</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="">@lang('menu.contact')</a></li>
+                    <li><hr /></li>
+                    <li><a href="{{ URL::to('/es') }}" title="">Español</a></li>
+                    <li><a href="{{ URL::to('/en') }}" title="">English</a></li>
                 </ul>
             </nav>
         </div> <!-- /top-bar -->
