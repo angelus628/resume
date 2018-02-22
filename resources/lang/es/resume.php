@@ -18,7 +18,7 @@
         'extrema'          => 'Extrema Mercadeo Relacional',
         'desc-extrema'     => '<p>El tiempo que estuve en Extrema, realicé tres tareas específicas, primero necesitaban que instalara y configurara un sistema de gestión de contenidos, el cual estaba tratando de vender a otra empresa. Para esto tuve que aprender WordPress y cuál era la forma de desacargarlo, descomprimirlo y subirlo al sitio que proveía el cliente. Tuve que aprender algunos temas sobre plantillas, extensiones, taxonomía, y un poco sobre la capa debajo, la cual es simple PHP.</p>
 <p>También, tuve que una página web que estaba pensada para guardar registro de los puntos que un vendedor había ganado durante el periodo, luego dichos puntos debían ser presentados al vendedor, para que así él o ella pudiera redimirlos por un producto en particular los cuales serían entregados por su empleador. Todo esto con el propósito de impulsar las ventas. La integración debía ser hecha con Joomla, ya que este era el sistema que llevaba el registro de los puntos. por lo tanto tuve que aprender lo básico sobre el manejo de sesión en Joomla. El propósito principal era el de evitar que los usuarios se tuvieran que iniciar sesión en dos plataformas diferentes.</p>
-<p>Por último, se me pidio que desarrolara un sistema de gestión de documentos contables, para que fuera usado dentro de la compañía. Como en el momento se contaba con poco presupuesto para el proyecto sólo se me pidio crear un generador de facturas, el cual debía ser capaz de generar un factura a partir de campos ingresados y convertir los datos un archivo PDF el cual debía ser impreso.</p>',
+<p>Por último, se me pidio que desarrolara un sistema de gestión de documentos contables, para que fuera usado dentro de la compañía. Como en el momento se contaba con poco presupuesto para el proyecto sólo se me pidio crear un generador de facturas, el cual debía ser capaz de generar una factura a partir de campos ingresados y convertir los datos un archivo PDF el cual debía ser impreso.</p>',
 
         'position-open' => 'Desarrollador Web Junior',
         'date-open'     => 'Septiembre 2012 - Mayo 2013',
@@ -30,23 +30,23 @@
         'position-ads' => 'Desarrollador Web',
         'date-ads'     => 'Noviembre 2011 - Junio 2012',
         'ads'          => 'Adsmovil',
-        'desc-ads'     => '<p>As my first job that was actually aligned with my career, it was the starting point to me to take the decision on becoming a developer. In Adsmovil, I started to write some web pages with HTML, CSS, some Javascript and PHP.</p>
-<p>By then, it was taken some strenght the tern Responsive Design, which was exactly what I needed back then in order to write web pages that were adaptable for any kind of mobile device.</p>
-<p>There I learned about CSS, some media queries, and was my actual first experience with working in an digital agency. </p>',
+        'desc-ads'     => '<p>Este fue el primer trabajo que tuve, que en realidad estaba alineado con mi carrera. Fue el punto de partida para convertirme en derrollador PHP. En Adsmovil, empecé a escribir algunas páginas web con HTML, CSS, algo de Javascript y PHP.</p>
+<p>Para ese entonces, estaba tomando fuerza el término diseño web adaptable, lo que era justo lo que necesitaba en ese entonces, con el fin de escribir páginas web que respondoeran de forma correcta a cada tipo de dispositivo móbil.</p>
+<p>Allí aprendí sobre el CSS y su importancia, algunos media queries (puntos de quiebre), y fue mi primera experiencia de trabajar en una agencia digital.</p>',
 
-        'found-title' => 'Linux Foundation Certified System Administrator (LFCS)',
-        'found-date'  => 'Oct 2017 – Oct 2019',
-        'found-name'  => 'The Linux Foundation',
-        'found-desc'  => 'I obtained the Linux  Foundation Certified System Administrator (LFCS) title, in an attempt to achieve a long time pursue dream, which was to learn more about the Linux Operating System, and have the support of an accrediting entity.',
+        'found-title' => 'Administrador de Sistemas Certificado por la Fundación Linux (LFCS)',
+        'found-date'  => 'Octubre 2017 – Octubre 2019',
+        'found-name'  => 'La Fundación Linux',
+        'found-desc'  => 'Obtuve el título de Administrador de Sistemas otorgado por la Fundación Linux (LFCS), esto en un intento de alcanzar una meta a largo plazo, la cual es aprender más sobre sistemas operativos Linux, y tener el respaldo de una entidad acreditadora.',
 
 
-        'ean-title' => 'System Engineer',
-        'ean-date'  => 'Jan 2011 - Nov 2013',
-        'ean-name'  => 'EAN University',
-        'ean-desc'  => 'At EAN university, I arrived after having taken the decision of becoming professional, although my family was in tough position, my father managed to help and pay the fisrt semester, it was a great effort, but at the end I managed to help myself through monitoring and become a representative of the faculty of engineering. There I learned, the basics of the JAVA programing language, some project administration, and as the university is very focused on entrepeneurship, I learned about the tools to create to create a startup.',
+        'ean-title' => 'Ingeniero de Sistemas',
+        'ean-date'  => 'Enero 2011 - Noviembre 2013',
+        'ean-name'  => 'Universidad EAN',
+        'ean-desc'  => 'En la universidad EAN, llegué con la meta impuesta de convertirme en un profesional, a paesar de que mi familia estaba en una situación económica difícil, mi papá fue de gran ayuda y jusnto pagamos el primer semestre de la carrera. Fue un gran esfuerzo, pero al final fui capaz de pagar el resto de la carrera yo mismo, con la ayuda de monitorías en las que ayudaba a los profesores y luego convirtiéndome en el representante de los estudiantes de la facultad de ingeniería. En la universidad aprendí lo básico de la programación en el lenguaje de programación JAVA, sobre administración de proyectos, y como la universidad se enfoca en el emprendimeinto, aprendí sobre las herramientas que tenemos a la hora de crear nuestra propia empresa.',
 
-        'jose-title' => 'Technician System Engineer ',
-        'jose-date'  => 'Feb 2007 - Sep 2010',
-        'jose-name'  => 'Fundation of Superiror Education San José',
-        'jose-desc'  => 'As my first approach to System Engineering, it was where I acquired the basic knowledge of maths, equations, math logic, boolean logic, algorithms and where I started to write my first programs. There I found passion for writing code.',
+        'jose-title' => 'Técnico en Ingeniería de Sistemas',
+        'jose-date'  => 'Febrero 2007 - Septiembre 2010',
+        'jose-name'  => 'Fundación de Educación Superior San José',
+        'jose-desc'  => 'Como mi primer acercamiento a la Ingeniería de Sistemas, fue allí en donde adquirí el conocimiento básico sobre matemáticas, ecuaciones, lógica matemática, lógica booleana, algoritmos y fue en donde empencé a escribir mis primeros programas. Allí fue en donde descubirí la pasión por escribir código.',
     ];

@@ -5,12 +5,12 @@
 	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+   			<h5>@lang('contact.title')</h5>
+   			<h1>@lang('contact.sub-title')</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">@lang('contact.description')</p>
 
-   		</div> 
+   		</div>
    	</div> <!-- /section-intro -->
 
    	<div class="row contact-form">
@@ -22,21 +22,21 @@
       			<fieldset>
 
                   <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
                   </div>
                   <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="@lang('contact.form-email')" value="" required="">
 	               </div>
                   <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="@lang('contact.form-subject')" value="">
+	               </div>
                   <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="@lang('contact.form-message')" rows="10" cols="50" required=""></textarea>
+	               </div>
                  <div class="form-field">
-                     <button class="submitform">Submit</button>
+                     <button class="submitform">@lang('contact.form-submit')</button>
                      <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
+                        <div class="text-loader">@lang('contact.sending')</div>
        				      <div class="s-loader">
 								  	<div class="bounce1"></div>
 								  	<div class="bounce2"></div>
@@ -49,15 +49,15 @@
       		</form> <!-- Form End -->
 
             <!-- contact-warning -->
-            <div id="message-warning">            	
-            </div>            
+            <div id="message-warning">
+            </div>
             <!-- contact-success -->
       		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+               <i class="fa fa-check"></i>@lang('contact.success')<br>
       		</div>
 
          </div> <!-- /col-twelve -->
-   		
+
    	</div> <!-- /contact-form -->
 
    	<div class="row contact-info">
@@ -68,13 +68,9 @@
    				<i class="icon-pin"></i>
    			</div>
 
-   			<h5>Where to find me</h5>
+   			<h5>@lang('contact.where')</h5>
 
-   			<p>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
-            </p>
+   			<p>@lang('contact.address')</p>
 
    		</div>
 
@@ -84,11 +80,9 @@
    				<i class="icon-mail"></i>
    			</div>
 
-   			<h5>Email Me At</h5>
+   			<h5>@lang('contact.emailme')</h5>
 
-   			<p>someone@kardswebsite.com<br>
-			   	info@kardswebsite.com			     
-			   </p>
+   			<p>@lang('contact.email')</p>
 
    		</div>
 
@@ -98,16 +92,12 @@
    				<i class="icon-phone"></i>
    			</div>
 
-   			<h5>Call Me At</h5>
+   			<h5>@lang('contact.callme')</h5>
 
-   			<p>Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
-			   </p>
+   			<p>@lang('contact.number')</p>
 
    		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-</section> <!-- /contact -->
 
+   	</div> <!-- /contact-info -->
+
+</section> <!-- /contact -->
