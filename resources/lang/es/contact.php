@@ -1,7 +1,7 @@
 <?php
     return [
         'title' => 'Contácto',
-        'sub-title' => 'Ponte en contacto conmigo.',
+        'sub-title' => 'Ponte en contácto conmigo.',
         'description' => 'Sólo deja tu mensaje y tan pronto pueda te escribiré de vuelta.',
         'form-name' => 'Nombre',
         'form-email' => 'Correo Electrónico',

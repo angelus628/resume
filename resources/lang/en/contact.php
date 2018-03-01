@@ -1,6 +1,6 @@
 <?php
     return [
-        'title' => 'Contácto',
+        'title' => 'Contact',
         'sub-title' => 'I\'d like to hear from you.',
         'description' => 'Just leave your message and as soon as I can, I\'ll write you back.',
         'form-name' => 'Name',

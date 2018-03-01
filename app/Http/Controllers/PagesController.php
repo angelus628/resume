@@ -14,4 +14,8 @@ class PagesController extends Controller
     public function home(Request $request){
         return view('pages.home');
     }
+
+    public function contact(Request $request){
+        return 'OK';
+    }
 }

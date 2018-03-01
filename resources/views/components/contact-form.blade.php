@@ -18,17 +18,17 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
+            <!--<form name="contactForm" id="contactForm" method="post" action="">-->
+			{{ Form::open(array('route' => 'contact', 'id' => 'contactForm')) }}
       			<fieldset>
-
+                  	<div class="form-field">
+ 						<input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
+                  	</div>
+	                <div class="form-field">
+		      		   <input name="contactEmail" type="email" id="contactEmail" placeholder="@lang('contact.form-email')" value="" required="">
+		            </div>
                   <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="@lang('contact.form-email')" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="@lang('contact.form-subject')" value="">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="@lang('contact.form-subject')" value="" required="">
 	               </div>
                   <div class="form-field">
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="@lang('contact.form-message')" rows="10" cols="50" required=""></textarea>
@@ -46,7 +46,8 @@
                   </div>
 
       			</fieldset>
-      		</form> <!-- Form End -->
+			{{ Form::close() }}
+		<!--</form>--> <!-- Form End -->
 
             <!-- contact-warning -->
             <div id="message-warning">
