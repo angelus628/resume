@@ -2,3 +2,7 @@
 vendor
 composer.lock
 storage/*
+.env.example
+.gitattributes
+.project
+.settings
