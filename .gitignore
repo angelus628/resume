@@ -1,7 +1,9 @@
 .env
 vendor
 composer.lock
-storage/*
+storage/app/*
+storage/framework/*
+storage/logs/*
 .env.example
 .gitattributes
 .project
