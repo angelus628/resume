@@ -24,8 +24,10 @@ class PagesController extends Controller
             'contactSubject' => $request->input('contactSubject'),
             'contactMessage' => $request->input('contactMessage'),
         );
+
         Mail::to(env('MAIL_TO_ADDRESS1'))
         ->send(new ContactMail($message));
+
         return 'OK';
     }
 }
