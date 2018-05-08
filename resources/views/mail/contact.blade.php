@@ -22,9 +22,6 @@
             background-color: #70bbd9;
             color: #fff;
         }
-        .dark-pink {
-            background-color: #ee4c50;
-        }
         table table img {
             width: 100%;
             display: block;
@@ -55,6 +52,27 @@
         .body {
             background-color: #222222;
             color: #fff;
+        }
+        .footer div {
+            float: left;
+            display: inline-block;
+            margin: 0 0.2rem;
+        }
+        div.copy {
+            width: 65%;
+            max-width: 65%;
+        }
+        div.social {
+            width: 25%;
+            max-width: 25%;
+        }
+        img.social-icon {
+            width: 15%;
+            max-width: 15%;
+            padding: .06rem;
+            float: left;
+            display: inline-block;
+            border-radius: .25rem;
         }
     </style>
 </head>
@@ -88,10 +106,31 @@
                             </table>
                         </td>
                     </tr>
-                    <tr class="dark-pink">
+                    <tr>
                         <td class="footer">
-                            &copy; Luis Agudelo, Bogotá Colombia {{ date('Y') }}<br />
-                            Visitame en: <a class="link" href="{{ url('/') }}" target="_blank">{{ url('/') }}</a>
+                            <div class="copy">
+                                &copy; Luis Agudelo, Bogotá Colombia {{ date('Y') }}<br />
+                                Visitame en: <a class="link" href="{{ url('/') }}" target="_blank">{{ url('/') }}</a>
+                            </div>
+
+                            <div class="social">
+                                <!-- -->
+                                <div>
+                                <a href="https://github.com/angelus628"><img class="social-icon" src="{{ $message->embed('img/github-icon.png') }}" /></a>
+                                <a href="https://www.linkedin.com/in/luis-%C3%A1ngel-agudelo-pajoy-68342086/"><img class="social-icon" src="{{ $message->embed('img/linkedin-icon.png') }}" /></a>
+                                <a href="https://twitter.com/luzzodijopipe"><img class="social-icon" src="{{ $message->embed('img/twitter-icon.png') }}" /></a>
+                                <a href="https://www.instagram.com/luzzodijopipe/"><img class="social-icon" src="{{ $message->embed('img/instagram-icon.png') }}" /></a>
+                                <a href="https://www.facebook.com/luzzodijopipe"><img class="social-icon" src="{{ $message->embed('img/facebook-icon.png') }}" /></a>
+                                </div>
+                                <!-- -->
+                                <!--
+                                <a href="https://github.com/angelus628"><img class="rounded float-left" src="{{ asset('img/github-icon.png') }}" /></a>
+                                <a href="https://www.linkedin.com/in/luis-%C3%A1ngel-agudelo-pajoy-68342086/"><img class="rounded float-left" src="{{ asset('img/linkedin-icon.png') }}" /></a>
+                                <a href="https://twitter.com/luzzodijopipe"><img class="rounded float-left" src="{{ asset('img/twitter-icon.png') }}" /></a>
+                                <a href="https://www.instagram.com/luzzodijopipe/"><img class="rounded float-left" src="{{ asset('img/instagram-icon.png') }}" /></a>
+                                <a href="https://www.facebook.com/luzzodijopipe"><img class="rounded float-left" src="{{ asset('img/facebook-icon.png') }}" /></a>
+                            -->
+                            </div>
                         </td>
                     </tr>
                 </table>
