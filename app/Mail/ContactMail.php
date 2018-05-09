@@ -28,7 +28,7 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->from(env('MAILGUN_LOGIN'))
+        return $this->from(env('MAILGUN_LOGIN'), config('app.name'))
                 ->view('mail.contact')
                 ->with(array(
                     'sender'  => $this->message['contactEmail'],
