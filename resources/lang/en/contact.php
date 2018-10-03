@@ -11,10 +11,9 @@
         'sending' => 'Sending...',
         'success'=> 'Your message was sent, thank you!',
         'where' => 'Where to find me',
-        'address' => 'Carrera 140c # 137 - 59<br />Bogotá<br />Colombia',
+        'address' => '<a href="https://goo.gl/maps/f9qBVxUMty22">Calle 145 # 49 - 34</a><br />Bogota<br />Colombia',
         'emailme' => 'Email Me At',
-        'email' => 'angelus628@hotmail.com<br />angelus628@gmail.com',
+        'email' => '<a href="mailto:angelus628@hotmail.com">angelus628@hotmail.com</a><br /><a href="mailto:angelus628@gmail.com">angelus628@gmail.com</a>',
         'callme' => 'Call Me At',
-        'number' => 'Phone: +57 (1) 3949531<br />
-        Mobile: +57 315 650 63 92',
+        'number' => 'Land line: <a href="tel:+5712459944">+57 (1) 2459944</a><br />Mobile: <a href="tel:+573156506392">+57 315 650 63 92</a>',
     ];

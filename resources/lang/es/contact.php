@@ -11,10 +11,9 @@
         'sending' => 'Enviando...',
         'success'=> 'Tu mensaje fue enviado ¡gracias!',
         'where' => 'En dónde encontrarme',
-        'address' => 'Carrera 140c # 137 - 59<br />Bogotá<br />Colombia',
+        'address' => '<a href="https://goo.gl/maps/f9qBVxUMty22">Calle 145 # 49 - 34<br /></a>Bogotá<br />Colombia',
         'emailme' => 'Escríbeme a',
-        'email' => 'angelus628@hotmail.com<br />angelus628@gmail.com',
+        'email' => '<a href="mailto:angelus628@hotmail.com">angelus628@hotmail.com</a><br /><a href="mailto:angelus628@gmail.com">angelus628@gmail.com</a>',
         'callme' => 'Llámame a',
-        'number' => 'Teléfono fijo: +57 (1) 3949531<br />
-        Celular: +57 315 650 63 92',
+        'number' => 'Teléfono fijo: <a href="tel:+5712459945">+57 (1) 2459944</a><br />Celular: <a href="tel:+573156506392">+57 315 650 63 92</a>',
     ];
