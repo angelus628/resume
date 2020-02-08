@@ -17,7 +17,7 @@
 
    		<div class="col-twelve">
 
-      {{ Form::open(['route' => '/contact', 'id' => 'contactForm']) }}
+      {{ Form::open(['route' => 'contact', 'id' => 'contactForm']) }}
       			<fieldset>
                   	<div class="form-field">
  						<input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
