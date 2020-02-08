@@ -23,7 +23,7 @@
         el 3er parámetro a URL::to() como true para que me permita enviar datos
         si mi dominio usa ssl
      -->
-      {{ Form::open(['url' => URL::to('/contact', [], true), 'id' => 'contactForm']) }}
+      Form::open(['route' => '/contact', 'id' => 'contactForm']) }}
       			<fieldset>
                   	<div class="form-field">
  						<input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
