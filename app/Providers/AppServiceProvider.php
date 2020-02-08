@@ -13,6 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /*
+        * Como tengo una versión anticuada de laravel (5.5), debo utilizar el esquema
+        * https aquí. Lo cual fuerza a mis vistas a usar este esquema
+        */
         \Illuminate\Support\Facades\URL::forceScheme('https');
     }
 
