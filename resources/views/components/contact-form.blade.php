@@ -17,10 +17,13 @@
 
    		<div class="col-twelve">
 
-            <!-- form -->
-            <!--<form name="contactForm" id="contactForm" method="post" action="">-->
+
+      <!--
+        La forma de enviar formularios a través del protocolo https debo pasarle
+        el 3er parámetro a URL::to() como true para que me permita enviar datos
+        si mi dominio usa ssl
+     -->
       {{ Form::open(['url' => URL::to('/contact', [], true), 'id' => 'contactForm']) }}
-			<!-- Form::open(array('route' => 'contact', 'id' => 'contactForm')) -->
       			<fieldset>
                   	<div class="form-field">
  						<input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
