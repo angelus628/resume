@@ -26,6 +26,11 @@ Route::prefix('{locale?}')->middleware('locale')->group(function(){
         );
         return new App\Mail\ContactMail($message);
     })->name('mailable');
+
+    Route::resources([
+        'articles' => 'ArticleController',
+        'authors'  => 'AuthorController'
+    ]);
 });
 
 

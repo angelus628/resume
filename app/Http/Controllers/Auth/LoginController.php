@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Http\Request;
+use App\Users;
 
 class LoginController extends Controller
 {
@@ -35,9 +38,8 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $locale = app()->getLocale();
-        $this->redirectAfterLogout = '/' . $locale;
-        $this->redirectTo = '/' . $locale . '/dashboard';
+        $this->redirectAfterLogout = '/' . app()->getLocale() . '/login';
+        $this->redirectTo = '/' . app()->getLocale() . '/dashboard';
         $this->middleware('guest')->except('logout');
     }
 }

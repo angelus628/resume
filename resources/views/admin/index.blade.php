@@ -28,5 +28,56 @@
     </div>
 </nav>
 <div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <h3>@lang('admin.article-section-title')</h3>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>@lang('admin.table-article-title')</th>
+                        <th>@lang('admin.table-article-author')</th>
+                        <th>@lang('admin.table-article-tags')</th>
+                    </tr>
+                <thead>
+                <tbody>
+                    @foreach ($articles as $article)
+                        <td>{{ $article->title }}</td>
+                        <td>{{ $article->author }}</td>
+                        <td>{{ $article->tags }}</td>
+                    @endforeach
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>@lang('admin.author-section-title')</h3>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>@lang('admin.table-author-name')</th>
+                        <th>@lang('admin.table-author-email')</th>
+                        <th>@lang('admin.table-author-articles')</th>
+                    </tr>
+                <thead>
+                <tbody>
+                    <tr>
+                        @foreach ($authors as $author)
+                            <td>{{ $author->title }}</td>
+                            <td>{{ $author->author }}</td>
+                            <td>{{ $author->tags }}</td>
+                        @endforeach
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 @endsection
