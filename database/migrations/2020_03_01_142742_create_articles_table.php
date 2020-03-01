@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class DropColumnActive extends Migration
+class CreateArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class DropColumnActive extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->DropColumn('active');
+        Schema::create('articles', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->text('body');
+            $table->string('tags');
+            $table->integer('author_id');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +30,6 @@ class DropColumnActive extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->integer('active');
-        });
+        Schema::dropIfExists('articles');
     }
 }

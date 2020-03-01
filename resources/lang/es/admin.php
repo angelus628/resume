@@ -1,5 +1,8 @@
 <?php
 return [
+    'new-article' => 'Nuevo artículo',
+    'new-author' => 'Nuevo autor',
+
     'article-section-title' => 'Articulos',
     'table-article-title' => 'Título',
     'table-article-body' => 'Descripción',
