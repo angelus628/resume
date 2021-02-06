@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  php:
+    build:
+      context: ./php
+      dockerfile: php-docker
+    volumes:
+      - ../.:/var/www/html
+
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ../.:/var/www/html
+      - ./nginx/resume.conf:/etc/nginx/conf.d/resume.conf
+    ports:
+      - 8081:8081
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres:alpine
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: resume
+      POSTGRES_USER: resume
+      POSTGRES_PASSWORD: Resume*2021
