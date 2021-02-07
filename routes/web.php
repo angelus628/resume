@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Front\Home;
+use App\Http\Controllers\Front\Contact;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('{locale?}')->middleware('locale')->group(function(){
+    Route::get('/', Home::class)->name('home');
+
+    Route::get('/mailable', function(){
+        $message = array(
+            'contactName'    => 'Luis Ángel',
+            'contactEmail'   => 'lagudelo@digitalvirgoamericas.com',
+            'contactSubject' => 'Me gusta tu página',
+            'contactMessage' => 'Me gusta tu página de verdad',
+        );
+        return new App\Mail\ContactMail($message);
+    })->name('mailable');
 });
+
+Route::get('/contact', Contact::class)->name('contact');
