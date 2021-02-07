@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Front\Home;
+use App\Http\Controllers\Front\Contact;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,7 @@
 */
 
 Route::prefix('{locale?}')->middleware('locale')->group(function(){
-    Route::get('/', 'PagesController@home')->name('home');
-    Route::get('/dashboard', 'Admin\HomeController@index');
-    Auth::routes();
+    Route::get('/', Home::class)->name('home');
 
     Route::get('/mailable', function(){
         $message = array(
@@ -26,13 +27,6 @@ Route::prefix('{locale?}')->middleware('locale')->group(function(){
         );
         return new App\Mail\ContactMail($message);
     })->name('mailable');
-
-    Route::resources([
-        'articles' => 'ArticleController',
-        'authors'  => 'AuthorController'
-    ]);
 });
 
-
-
-Route::post('/contact', 'PagesController@contact')->name('contact');
+Route::get('/contact', Contact::class)->name('contact');

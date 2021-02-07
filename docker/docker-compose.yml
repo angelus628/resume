@@ -16,6 +16,14 @@ services:
     ports:
       - 8081:8081
 
+  redis:
+    image: redis:alpine
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+
   postgres:
     image: postgres:alpine
     volumes:

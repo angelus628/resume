@@ -17,7 +17,7 @@
         'date-extrema'     => 'May 2013 - November 2013',
         'extrema'          => 'Extrema Relational Marketing',
         'desc-extrema'     => '<p>I worked in Extrema to do three specific tasks, first they needed me to install and configure a wordpress site they were trying to sell another company. So I had to learn how to take wordpress dowloaded ZIP and upload it to the provided web hosting site. I had to learn somethings about themes, plugins, taxonomy, and another little about the layer under it which is just PHP.</p>
-<p>Also I was required to integrate a web page that was ment to keep record of the points one seller had earned during the sells cycle, and present it to the the seller, so that he or she was able to redeem these point by some products that their employer would gave them, in order to encorage the sales. The integration should by made to Joomla, so I had to learn the basics of sign in and logout of it. The idea was that they should be able to login indistinctly in one page or another (ours or joomla), and be able to access their information without login twice in two different pages.</p>
+<p>Also I was required to integrate a web page that was ment to keep record of the points one seller had earned during the sells cycle, and present it to the the seller, so that he or she was able to redeem these point by some products that their employer would gave them, in order to encorage the sales. The integration should by made to Joomla, so I had to learn the basics of sign in and logout of it. The idea was that they should be able to login indistinctly in one page or another (ours or joomla), and be able to access their information without login twice in two different static.</p>
 <p>Lastly, I was required to develop a financial management system, to be used inside the company. As there was a short budget for this project, I was only asked to develop a invoice creator and that based on that the person should be able to print it or send it.</p>',
 
         'position-open' => 'Junior Web Developer',
@@ -30,8 +30,8 @@
         'position-ads' => 'Web Developer',
         'date-ads'     => 'November 2011 - Jun 2012',
         'ads'          => 'Adsmovil',
-        'desc-ads'     => '<p>As my first job that was actually aligned with my career, it was the starting point to me to take the decision on becoming a developer. In Adsmovil, I started to write some web pages with HTML, CSS, some Javascript and PHP.</p>
-<p>By then, it was taken some strenght the tern Responsive Design, which was exactly what I needed back then in order to write web pages that were adaptable for any kind of mobile device.</p>
+        'desc-ads'     => '<p>As my first job that was actually aligned with my career, it was the starting point to me to take the decision on becoming a developer. In Adsmovil, I started to write some web static with HTML, CSS, some Javascript and PHP.</p>
+<p>By then, it was taken some strenght the tern Responsive Design, which was exactly what I needed back then in order to write web static that were adaptable for any kind of mobile device.</p>
 <p>There I learned about CSS, some media queries, and was my actual first experience with working in an digital agency. </p>',
 
         'found-title' => 'Linux Foundation Certified System Administrator (LFCS)',

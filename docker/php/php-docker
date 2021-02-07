@@ -1,8 +1,12 @@
 FROM php:7.4-fpm-alpine
 
-RUN apk add --no-cache postgresql-dev
+RUN apk add --no-cache pcre-dev ${PHPIZE_DEPS} postgresql-dev
+
+RUN pecl install redis
 
 RUN docker-php-ext-install pdo pdo_pgsql
+
+RUN docker-php-ext-enable redis
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \

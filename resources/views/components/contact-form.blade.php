@@ -17,7 +17,8 @@
 
    		<div class="col-twelve">
 
-      {{ Form::open(['route' => 'contact', 'id' => 'contactForm']) }}
+            <form action="/contact" method="post" id="contactForm">
+                @csrf
       			<fieldset>
                   	<div class="form-field">
  						<input name="contactName" type="text" id="contactName" placeholder="@lang('contact.form-name')" value="" minlength="2" required="">
@@ -44,8 +45,7 @@
                   </div>
 
       			</fieldset>
-			{{ Form::close() }}
-		<!--</form>--> <!-- Form End -->
+            </form>
 
             <!-- contact-warning -->
             <div id="message-warning">

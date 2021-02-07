@@ -230,8 +230,8 @@
 				beforeSend: function() { sLoader.fadeIn(); },
 		      	success: function(msg) {
 		            // Message was sent
-					console.log(msg);
-		            if (msg == 'OK') {
+					console.log(msg.response);
+		            if (msg.response == 'ok') {
 		            	sLoader.fadeOut();
 		                $('#message-warning').hide();
 		                $('#contactForm').fadeOut();
@@ -240,12 +240,11 @@
 		            // There was an error
 		            else {
 		            	sLoader.fadeOut();
-		            	$('#message-warning').html(msg);
+		            	$('#message-warning').html(msg.description);
 			            $('#message-warning').fadeIn();
 		            }
 		      	},
 				error: function() {
-					console.log('HOLA ERROR');
 					sLoader.fadeOut();
 					$('#message-warning').html("Something went wrong. Please try again.");
 					$('#message-warning').fadeIn();
