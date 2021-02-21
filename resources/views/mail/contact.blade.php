@@ -82,7 +82,7 @@
             <td>
                 <table align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td><img src="{{ $message->embed('img/mail-logo.png') }}" /></td>
+                        <td><img src="{{ $message->embed('img/mail-logo.png') }}"  alt="Logo"/></td>
                         <!--<td><img src="{{ asset('img/mail-logo.png') }}" /></td>-->
                     </tr>
                     <tr class="body">

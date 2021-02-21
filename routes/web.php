@@ -29,4 +29,4 @@ Route::prefix('{locale?}')->middleware('locale')->group(function(){
     })->name('mailable');
 });
 
-Route::get('/contact', Contact::class)->name('contact');
+Route::post('/contact', Contact::class)->name('contact');

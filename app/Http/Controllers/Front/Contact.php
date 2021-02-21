@@ -14,15 +14,13 @@ class Contact extends Controller
     public function __invoke(Request $request): JsonResponse
     {
         try {
-            $message = [
-                'contactName' => $request->input('contactName'),
-                'contactEmail' => $request->input('contactEmail'),
-                'contactSubject' => $request->input('contactSubject'),
-                'contactMessage' => $request->input('contactMessage'),
-            ];
-
             Mail::to(env('MAIL_TO_ADDRESS1'))
-                ->send(new ContactMail($message));
+                ->send(new ContactMail([
+                    'contactName' => $request->input('contactName'),
+                    'contactEmail' => $request->input('contactEmail'),
+                    'contactSubject' => $request->input('contactSubject'),
+                    'contactMessage' => $request->input('contactMessage'),
+                ]));
 
             return response()
                 ->json([
