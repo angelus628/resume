@@ -14,7 +14,7 @@ class Contact extends Controller
     public function __invoke(Request $request): JsonResponse
     {
         try {
-            Mail::to(env('MAIL_TO_ADDRESS1'))
+            Mail::to(env('MAIL_TO_ADDRESS2'))
                 ->send(new ContactMail([
                     'contactName' => $request->input('contactName'),
                     'contactEmail' => $request->input('contactEmail'),

@@ -25,7 +25,7 @@ Route::prefix('{locale?}')->middleware('locale')->group(function(){
             'contactSubject' => 'Me gusta tu página',
             'contactMessage' => 'Me gusta tu página de verdad',
         );
-        return new App\Mail\ContactMail($message);
+        return (new App\Mail\ContactMail($message))->build();
     })->name('mailable');
 });
 
