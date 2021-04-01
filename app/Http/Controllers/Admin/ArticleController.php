@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Author;
+use App\Article;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AuthorController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +25,8 @@ class AuthorController extends Controller
      */
     public function create()
     {
-        //
+        $article = Article::first();
+        return view('article.create', ['article' => $article]);
     }
 
     /**
@@ -41,10 +43,10 @@ class AuthorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Author  $author
+     * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Author $author)
+    public function show(Article $article)
     {
         //
     }
@@ -52,10 +54,10 @@ class AuthorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Author  $author
+     * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function edit(Author $author)
+    public function edit(Article $article)
     {
         //
     }
@@ -64,10 +66,10 @@ class AuthorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Author  $author
+     * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Author $author)
+    public function update(Request $request, Article $article)
     {
         //
     }
@@ -75,10 +77,10 @@ class AuthorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Author  $author
+     * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Author $author)
+    public function destroy(Article $article)
     {
         //
     }

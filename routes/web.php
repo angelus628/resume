@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Dashboard;
 use App\Http\Controllers\Front\Home;
 use App\Http\Controllers\Front\Contact;
 use Illuminate\Support\Facades\Route;
@@ -14,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::prefix('/admin')->middleware('auth')->group(function (): void {
+    Route::get('/', Dashboard::class);
+});
 
 Route::prefix('{locale?}')->middleware('locale')->group(function(){
     Route::get('/', Home::class)->name('home');

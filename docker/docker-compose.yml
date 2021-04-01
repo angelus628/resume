@@ -27,8 +27,11 @@ services:
   postgres:
     image: postgres:alpine
     volumes:
-      - ./database:/var/lib/postgresql/data
+      - database:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: resume
       POSTGRES_USER: resume
       POSTGRES_PASSWORD: Resume*2021
+
+volumes:
+  database:
