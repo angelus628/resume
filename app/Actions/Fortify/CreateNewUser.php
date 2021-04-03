@@ -2,6 +2,7 @@
 
 namespace App\Actions\Fortify;
 
+use App\Models\Author;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -33,6 +34,11 @@ class CreateNewUser implements CreatesNewUsers
             ],
             'password' => $this->passwordRules(),
         ])->validate();
+
+        Author::create([
+            'name' => sprintf('%s %s', $input['name'], $input['lastname']),
+            'email' => $input['email']
+        ]);
 
         return User::create([
             'name' => $input['name'],

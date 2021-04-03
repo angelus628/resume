@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\Dashboard;
+use App\Http\Controllers\Author\AuthorCreate;
+use App\Http\Controllers\Author\AuthorIndex;
 use App\Http\Controllers\Front\Home;
 use App\Http\Controllers\Front\Contact;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +19,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('/admin')->middleware('auth')->group(function (): void {
-    Route::get('/', Dashboard::class);
+    Route::get('/', Dashboard::class)->name('dashboard');
+    Route::match(['get','head'], '/authors', AuthorIndex::class);
+    Route::match(['get','head'], '/authors/create', AuthorCreate::class);
+    /*Route::post('/authors', AuthorStore::class);
+    Route::match(['put','patch'], '/authors/{author}', AuthorUpdate::class);
+    Route::delete('/authors/{author}', AuthorDelete::class);
+    Route::match(['get','head'], '/authors/{author}', AuthorShow::class);
+    Route::match(['get','head'], '/authors/{author}/edit', AuthorEdit::class);*/
 });
 
 Route::prefix('{locale?}')->middleware('locale')->group(function(){

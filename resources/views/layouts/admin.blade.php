@@ -9,7 +9,7 @@
 
 <body id="top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ url(App::getLocale() . '/dashboard') }}">Luis Angel - Resume</a>
+        <a class="navbar-brand" href="{{ route('dashboard') }}">Luis Angel - Resume</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
             <ul class="navbar-nav mr-right">
                 @if(Auth::check())
                 <li class="nav-item">
-                    <form action="{{ url(App::getLocale() . '/logout') }}" method="post">
+                    <form action="{{ route('logout') }}" method="post">
                         {{ csrf_field() }}
                         <a id="logout" class="nav-link" href="#">Cerrar sesión</a>
                     </form>
