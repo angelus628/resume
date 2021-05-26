@@ -27,7 +27,7 @@
                 </tbody>
             </table>
             <div class="form-group">
-                <a href="{{ url('/authors/create') }}" class="btn btn-info">@lang('admin.new-author')</a>
+                <a href="{{ url('/admin/authors/create') }}" class="btn btn-info">@lang('admin.new-author')</a>
             </div>
         </div>
     </div>
